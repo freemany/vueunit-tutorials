@@ -1,0 +1,48 @@
+export default [
+`<!--page 1-->
+<h5>Step 1</h5>
+<p>Go to src/config/config.js:</p>
+<pre><code class="bash">
+$ cd src/config
+$ vim config.js
+</code></pre>
+<p>Start editing the file:</p>
+<pre><code class="bash">
+export default {
+    store_key: 'phpunit-master',
+}
+</code></pre>
+<p>Update the store_key to an value you like, store_key is the key to store your last page in the browser local storage.</p>
+<h5>Step 2</h5>
+<p>Go to src/components/SlideShow.vue to update the title on line 4.</p>
+<p>Go to src/config/slideshow.html to create slides with something you like to share.</p>
+<pre><code class="bash">
+$ vim slideshow.html
+</code></pre>
+`,
+`<!--page 2-->
+<h5>Step 4: Have fun!!!</h5>
+<pre><code class="php">
+ * Class SampleTest
+ *
+ * @package App\Test\TestCase
+ */
+class SampleTest extends TestCase
+{
+    public function testValid()
+    {
+        $this->assertTrue(true);
+    }
+
+    public function testException()
+    {
+        $message = 'exception message' . rand();
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage($message);
+
+        throw new \InvalidArgumentException($message);
+    }
+}
+</code></pre>
+`];
